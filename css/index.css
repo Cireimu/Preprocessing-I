@@ -162,7 +162,6 @@ body {
 header {
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
   align-content: center;
   width: 90%;
   font-family: 'Oswald', sans-serif;
@@ -176,9 +175,12 @@ header {
 }
 header nav {
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
   align-content: center;
-  text-align: right;
+  text-align: center;
+  margin-left: 12%;
 }
 @media (max-width: 500px) {
   header nav {
@@ -189,6 +191,7 @@ header nav {
   }
 }
 header nav a {
+  margin: 0 auto;
   color: gray;
   font-size: 1.2rem;
   text-decoration: none;
@@ -202,19 +205,17 @@ header nav a {
   }
 }
 .intro {
-  width: 70%;
+  width: 50%;
   height: 700px;
   margin: 70px;
   padding: 2%;
+  margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   align-content: center;
   background-color: whitesmoke;
   font-family: 'Ubuntu', sans-serif;
-  margin-top: 0.5%;
-  margin-left: 15%;
-  margin-right: 50%;
 }
 @media (max-width: 500px) {
   .intro {
@@ -264,10 +265,12 @@ header nav a {
   margin-top: -8%;
   margin-left: 0.9%;
   margin-bottom: -5%;
-  width: 65%;
+  width: 85%;
+  border-top: 1px dashed gray;
 }
 .intro .intro-p p {
   font-size: 1.08rem;
+  padding-top: 15px;
 }
 @media (max-width: 500px) {
   .intro .intro-p p {
@@ -298,15 +301,12 @@ header nav a {
 .history {
   margin: 0 auto;
   padding: 1%;
-  width: 50%;
+  width: 49%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-content: center;
   font-family: 'Ubuntu', sans-serif;
-  margin-top: -4%;
-  margin-left: 15%;
-  padding-top: 50px;
 }
 @media (max-width: 500px) {
   .history {
@@ -348,15 +348,14 @@ header nav a {
 }
 .history #history-things li {
   border: 2px solid whitesmoke;
-  padding: 1%;
+  padding: 2%;
 }
 .work {
   margin: 0 auto;
-  width: 50%;
+  width: 90%;
   display: flex;
-  flex-flow: column wrap;
-  align-content: left;
-  margin-left: 6.5%;
+  flex-flow: row wrap;
+  align-content: center;
   padding-top: 2.5%;
 }
 @media (max-width: 500px) {
@@ -364,7 +363,14 @@ header nav a {
     width: 100%;
   }
 }
-.work h3 {
+.work .work-container {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+}
+.work .work-container h3 {
   margin: 0 auto;
   width: 61.5%;
   text-align: left;
@@ -374,11 +380,12 @@ header nav a {
   font-family: 'Oswald', sans-serif;
 }
 @media (max-width: 500px) {
-  .work h3 {
-    width: 90%;
+  .work .work-container h3 {
+    width: 100%;
+    text-align: center;
   }
 }
-.work .work-history {
+.work .work-container .work-history {
   font-weight: bold;
   font-size: 1rem;
   padding-bottom: 5px;
@@ -391,11 +398,12 @@ header nav a {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .work .work-history {
-    width: 90%;
+  .work .work-container .work-history {
+    width: 70%;
+    text-align: center;
   }
 }
-.work #work-history-2 {
+.work .work-container #work-history-2 {
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
   margin: 0 auto;
@@ -406,30 +414,34 @@ header nav a {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .work #work-history-2 {
-    width: 90%;
+  .work .work-container #work-history-2 {
+    width: 70%;
   }
 }
-address {
-  margin: 0 auto;
-  width: 15%;
-  height: 150px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: left;
-  margin-left: 15.5%;
-  border: 1px solid black;
-  padding: 20px;
-  background-color: whitesmoke;
+/*
+address{
+	margin: 0 auto;
+	width: 15%;
+	height: 150px;;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: left;
+	margin-left: 15.5%;
+	border:1px solid black;
+	padding:20px;
+	background-color:@intro-color;
+	
+	h2{
+		font-weight: bold;
+		font-family: @header-font;
+	}
+
+	p{
+		padding: 5.8px;
+		font-family:@intro-text;
+	}
 }
-address h2 {
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif;
-}
-address p {
-  padding: 5.8px;
-  font-family: 'Ubuntu', sans-serif;
-}
+*/
 footer {
   margin: 0 auto;
   padding: 15px;
