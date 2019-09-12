@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/s/ptserif/v11/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/**/
+.container {
+  max-width: 2000px;
+}
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav {
+  margin: 0 auto;
+  width: 90%;
+  align-content: center;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+header nav a {
+  color: gray;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 0.5px solid gray;
+    background-color: whitesmoke;
+  }
+}
+.intro {
+  width: 70%;
+  height: 700px;
+  margin: 70px;
+  padding: 2%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: whitesmoke;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 0.5%;
+  margin-left: 15%;
+  margin-right: 50%;
+}
+@media (max-width: 500px) {
+  .intro {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+}
+.intro img {
+  width: 40%;
+  padding: 2%;
+  border-radius: 8%;
+  margin-top: -5%;
+  margin-left: -1.9%;
+}
+@media (max-width: 500px) {
+  .intro img {
+    margin: 0 auto;
+    align-content: center;
+    width: 95%;
+    margin-left: 3%;
+  }
+}
+.intro .my-name {
+  font-size: 3.5rem;
+  padding: 0.5%;
+  margin-top: -7%;
+}
+@media (max-width: 500px) {
+  .intro .my-name {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+.intro .my-name #description {
+  font-size: 1.3rem;
+  margin-top: 0.3%;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .intro .my-name #description {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+}
+.intro .intro-p {
+  margin-top: -8%;
+  margin-left: 0.9%;
+  margin-bottom: -5%;
+  width: 65%;
+}
+.intro .intro-p p {
+  font-size: 1.08rem;
+}
+@media (max-width: 500px) {
+  .intro .intro-p p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.intro button {
+  margin-left: 1%;
+  border-radius: 7%;
+  margin-top: -8%;
+  width: 10%;
+  padding: 0.8%;
+  background-color: gray;
+  color: white;
+}
+@media (max-width: 500px) {
+  .intro button {
+    margin: 0 auto;
+    width: 120%;
+    padding: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-left: -3%;
+  }
+}
+.history {
+  margin: 0 auto;
+  padding: 1%;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: -4%;
+  margin-left: 15%;
+  padding-top: 50px;
+}
+@media (max-width: 500px) {
+  .history {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+}
+.history h3 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding-bottom: 45;
+}
+.history p {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .history p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    text-align: center;
+  }
+}
+.history #history-things {
+  width: 55%;
+  margin-left: -35%;
+}
+@media (max-width: 500px) {
+  .history #history-things {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    text-align: center;
+  }
+}
+.history #history-things li {
+  border: 2px solid whitesmoke;
+  padding: 1%;
+}
+.work {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: left;
+  margin-left: 6.5%;
+  padding-top: 2.5%;
+}
+@media (max-width: 500px) {
+  .work {
+    width: 100%;
+  }
+}
+.work h3 {
+  margin: 0 auto;
+  width: 61.5%;
+  text-align: left;
+  padding: 10px 0 ;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 500px) {
+  .work h3 {
+    width: 90%;
+  }
+}
+.work .work-history {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  width: 61.5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .work .work-history {
+    width: 90%;
+  }
+}
+.work #work-history-2 {
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 auto;
+  width: 61.5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .work #work-history-2 {
+    width: 90%;
+  }
+}
+address {
+  margin: 0 auto;
+  width: 15%;
+  height: 150px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
+  margin-left: 15.5%;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+address h2 {
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+address p {
+  padding: 5.8px;
+  font-family: 'Ubuntu', sans-serif;
+}
+footer {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
